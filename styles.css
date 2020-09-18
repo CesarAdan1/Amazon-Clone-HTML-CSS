@@ -1,25 +1,36 @@
+*{
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;   
+}
+
 body {
     color: #ffffff;
 }
 
-*{
-    margin: 0;
-    padding: 0;    
+.header-subheader {
+    display: flex;
+    flex-direction: column;
+    height: 99px;
+    width: 100%;
 }
 
 #header-container{
     width: 100%;
     margin: 0;
     background: #131921;
-    padding-left: 20px;
-    padding-right: 20px;
+   
 }
 
-.header{    
+.header{   
+    width: 100%; 
+    height: 90px;
     display: flex;
     align-items:center;
     flex-direction: row;
-    justify-content: space-between;
+   
+    padding-left: 20px;
+    padding-right: 200px;
 }
 
 .header-left{
@@ -44,16 +55,76 @@ body {
 
 }
 
-input{
-    background: blue;
+.header-search-input{
+
 }
 
 .header-center {
+    padding-left: 10px;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+}
+
+.header-search{
+    width: 100%;
+    overflow-y: hidden;
+
     
 }
 
-@media (max-width: 768px) {
+.header-search-input{
+    width: 90%;
+    font-size: 18px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.header-right{
+    display: flex;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 20px;
+}
+
+.header-right-elements {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.header-right-elements-el {
+    display: flex;
+    padding: 0px 10px 0px 10px;
+    font-size: 12px;
+}
+
+.header-right-elements-el:hover {
+
+}
+
+.header-right-elements-st {
+   font-size: 15px;
+    font-weight: 10000 !important;
+}
+
+.header-right-elements-st:hover {
+
+}
+
+.header-cart{
+   display: flex;
+   flex-direction: row;
+}
+
+.subheader-container{
+    width: 100%;
+    height: 30px;
+    background-color: #232F3F;
+}
+
+@media (min-width: 768px) {
     .header-left{
-        display: none;
+        display: visible; 
     }
 }
